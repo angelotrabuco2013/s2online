@@ -57,7 +57,7 @@ function gotJSON(data){
     if (data.meta && data.meta.semver && data.meta.semver[0] === '3') {
         logMessage("It's an .sb3, we can't load it.");
         setProgress(100);
-        alert("Sorry, that file was made or modified in Scratch 3.0, so we can't load it into 2.0.");
+        alert("ERROR: Scratch 3.0 projects cannot be loaded into 2.0.");
         animError();
         return;
     }
@@ -167,8 +167,8 @@ function processSoundsAndCostumes(node){
 
 function perror(err){
     console.error(err);
-    alert("Failed to download. Perhaps you used a bad project ID?\nRemember that this tool only supports sb2 and sb1 projects.\n(It won't work if the project has been modified and saved in 3.0!)");
-    logMessage("Download error");
+    alert("ERROR: Unable to fetch project from scratch.mit.edu");
+    logMessage("Download failed");
     animError();
 }
 
