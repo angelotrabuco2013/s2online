@@ -1,11 +1,5 @@
 # s2online
 
-Download and open projects in the Scratch 2.0 editor
+Create your own projects with the Scratch 2.0 online editor.
 
-Use it: https://s2online.github.io/
-
-Note to self... :P
-
-```
-JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64/ ./gradlew build
-```
+To access the editor, use FlashBrowser or use a program that still supports Flash.
